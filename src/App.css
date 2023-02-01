@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	max-width: 1280px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.card {
+	padding: 2em;
+}
+
+.read-the-docs {
+	color: #888;
+}
+
+.quote {
+	color: white;
+}
+
+.quote-card {
+	background-color: #888;
+	margin-inline: auto;
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.quote-card button {
+	margin-top: 2rem;
+}
