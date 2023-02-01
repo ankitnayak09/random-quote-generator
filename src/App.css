@@ -9,6 +9,9 @@
 	text-align: center;
 }
 
+h1 {
+	margin: 2rem 0 7rem;
+}
 .card {
 	padding: 2em;
 }
@@ -19,15 +22,83 @@
 
 .quote {
 	color: white;
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-family: "Courier New", Courier, monospace;
 }
-
 .quote-card {
 	background-color: #888;
 	margin-inline: auto;
-	padding: 1rem;
-	border-radius: 10px;
+	padding: 2rem;
+	/* border-radius: 10px; */
+	transform: skewX(-10deg);
+	width: min(70%, 500px);
 }
-
+.quote-card > * {
+	transform: skewX(10deg);
+}
 .quote-card button {
 	margin-top: 2rem;
+	border-radius: 100px;
+	position: relative;
+	transition: 0.5s;
+	outline: none;
+}
+.quote-card button:hover::before {
+	position: absolute;
+	left: 0;
+	top: -10%;
+	content: "";
+	width: 100%;
+	height: 120%;
+	background-color: #a1a1a1;
+	border-radius: 100px;
+	scale: 1.1;
+	z-index: -1;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* Loading Spinner */
+.lds-dual-ring {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+}
+.lds-dual-ring:after {
+	content: " ";
+	display: block;
+	width: 64px;
+	height: 64px;
+	margin: 8px;
+	border-radius: 50%;
+	border: 6px solid #fff;
+	border-color: #fff transparent #fff transparent;
+	animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+a,
+a:visited,
+a:hover,
+a:active {
+	background-color: #888;
+	color: white;
 }
