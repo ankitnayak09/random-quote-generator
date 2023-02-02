@@ -2,8 +2,6 @@ import { useState, useEffect } from 'react'
 import './App.css'
 import QuoteCard from './QuoteCard';
 import Buttons from './Buttons';
-// let savedQuotes = localStorage.getItem("Quotes")
-// if (!savedQuotes) savedQuotes = []
 
 function App() {
   const [quote, setQuote] = useState(null)
