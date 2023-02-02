@@ -1,5 +1,7 @@
 # Random Quote Generator
 
+[Live Link](https://random-quote-generator-2.netlify.app/)
+
 Frontend Framework - React
 
 API - [Quotable](https://api.quotable.io/random)
